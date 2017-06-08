@@ -4,7 +4,7 @@ class UrlsController < ApplicationController
 		@urls = Url.all
 	end
 	def show
-		redirect_to  @url
+		redirect_to  @url.url
 	end
 	def alt
 		@url = Url.where(short: params[:short]).first
