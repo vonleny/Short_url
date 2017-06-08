@@ -1,13 +1,12 @@
-# README
+# Short_url Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### This App is designed to create a shorter path to a long website in order to be more manageable an practical to use.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.4
 
-* System dependencies
+* Postgresql 
 
 * Configuration
 
