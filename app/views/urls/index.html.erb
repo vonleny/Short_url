@@ -1,0 +1,21 @@
+<table>
+	<thead>
+		<th>Id</th>
+		<th>Url</th>
+		<th>Short url</th>
+		
+	</thead>
+	<tbody>
+		<% @urls.each do |url| %>
+			<tr>
+				<td><%= url.id %></td>
+				<td><%= url.url %></td>
+				<td><%= url.short %></td>
+			</tr>
+		<% end -%>
+	</tbody>
+</table>
+
+
+
+
