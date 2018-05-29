@@ -9,8 +9,9 @@
 		<% @urls.each do |url| %>
 			<tr>
 				<td><%= url.id %></td>
-				<td><%= url.url %></td>
+				<td><%= text_field_tag(url.url, url.url)  %></td>
 				<td><%= url.short %></td>
+				<td><%= sumit_tag 'Copy Url'  %></td>
 			</tr>
 		<% end -%>
 	</tbody>

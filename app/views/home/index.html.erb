@@ -1,10 +1,11 @@
-
-<strong>Short URL's</strong>
-<%= form_tag("/urls", method: "post") do %>
-  <%= label_tag(:url, "New Url:") %>
-  <%= text_field_tag(:url) %>
-  <%= submit_tag("Submit") %>
-<% end %>
+<div class="container">
+	<strong>Short URL's</strong>
+	<%= form_tag("/urls", method: "post") do %>
+	  <%= label_tag(:url, "New Url:") %>
+	  <%= text_field_tag(:url) %>
+	  <%= submit_tag("Submit", class: 'button') %>
+	<% end %>
+</div>
 <table>
 	<thead>
 		<th>Id</th>
@@ -14,10 +15,15 @@
 	</thead>
 	<tbody>
 		<% @urls.each do |url| %>
+		<% input_id = url.id %>
 			<tr>
-				<td>https://evening-reaches-43731.herokuapp.com/<%= url.id %></td>
+				<td ><%= text_field_tag input_id, "https://evening-reaches-43731.herokuapp.com/#{url.id}", class: 'url_input'%>
+				</td>
+			</tr>
+
 				<td><%= url.url %></td>
 				<td>https://evening-reaches-43731.herokuapp.com/alt/<%= url.short %></td>
+				<td><%= submit_tag   "Copy Url", id: url.id  %></td>
 			</tr>
 		<% end -%>
 	</tbody>

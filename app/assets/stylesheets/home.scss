@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 *{
 	font-family: Verdana;
+	margin: 0;
 
 }
 input{
@@ -13,4 +14,28 @@ input{
 input[type=submit]{
 	width:80px;
 	
+}
+.url_input{
+	font-size:10px;
+	width: 180px;
+}
+.container{
+	width: 100%;
+	background-color: red;
+	margin: auto;
+	height: 300px;
+	text-align: center;
+
+}
+.button{
+	height: 20px;
+	
+	border: none;
+	padding: 0;
+}
+#url{
+	height: 20px;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
